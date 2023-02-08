@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 20px;
+  overflow-X: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: hsl(223deg, 100%, 88%);
+}
+html::-webkit-scrollbar-thumb {
+  background: hsl(0deg, 0%, 59%);
+}
+
+body > *:not(:last-child) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  margin: 5rem 0 2rem 0;
+}
+
+main h1 {
+  font-weight: 300;
+  color: hsl(0deg, 0%, 59%);
+}
+main h1 span {
+  color: hsl(209deg, 33%, 12%);
+  font-weight: bold;
+}
+main p {
+  padding: 1rem 0;
+}
+main form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+main form input {
+  position: relative;
+  border: 1px solid hsl(0deg, 0%, 59%);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  padding: 0.7rem 5rem;
+  padding-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.1rem;
+  opacity: 50%;
+}
+main form button {
+  margin-top: -10px;
+  background: hsl(223deg, 87%, 63%);
+  color: hsl(223deg, 100%, 88%);
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+main form button:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+main .image {
+  margin: 3rem 0;
+  width: 420px;
+}
+main .image img {
+  max-width: 100%;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 1rem;
+}
+footer ul i {
+  border: 1px solid hsla(0deg, 0%, 59%, 0.383);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 0.7rem;
+  margin: 0.5rem;
+  color: hsl(223deg, 87%, 63%);
+}
+footer ul i:hover {
+  color: white;
+  background: hsl(223deg, 87%, 63%);
+  cursor: pointer;
+}
+footer p {
+  color: hsl(0deg, 0%, 59%);
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 1rem 0;
+}
+footer .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  main {
+    margin: 0 2rem;
+  }
+  main h1 {
+    font-size: 1.2rem;
+  }
+  main p {
+    font-size: 0.7rem;
+  }
+  main form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main form input {
+    margin-right: 0;
+  }
+  main form span {
+    justify-content: center;
+    padding-left: 0;
+  }
+  main form button {
+    padding: 0.8rem 5.5rem;
+    margin-top: 1rem;
+  }
+  main .image {
+    width: 320px;
+  }
+  footer ul {
+    margin: 0.2rem;
+  }
+  footer ul i {
+    padding: 0.3rem;
+    margin: 0.2rem;
+  }
+  footer ul i.fa-1x {
+    font-size: 0.5em;
+  }
+  footer p {
+    font-size: 0.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */

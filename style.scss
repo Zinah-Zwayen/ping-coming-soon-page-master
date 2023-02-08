@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+    outline: none;
+    border:none;
+    text-decoration: none;
+}
+
+
+$Blue: hsl(223, 87%, 63%);
+$Pale-Blue: hsl(223, 100%, 88%);
+$Light-Red: hsl(354, 100%, 66%);
+$Gray: hsl(0, 0%, 59%);
+$Very-Dark-Blue: hsl(209, 33%, 12%);
+
+html{
+    font-size: 20px;
+    overflow-X: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+
+    &::-webkit-scrollbar{
+        width: 1rem;
+    }
+    &::-webkit-scrollbar-track{
+        background: $Pale-Blue;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: $Gray;
+    }
+}
+
+body >*:not(:last-child){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    margin: 5rem 0 2rem 0;
+}
+
+main{
+    h1{
+        font-weight: 300;
+        color: $Gray;
+        span{
+            color: $Very-Dark-Blue;
+            font-weight: bold;
+        }
+    }
+    p{
+        padding: 1rem 0;
+    }
+    form{
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-top: 1rem;
+        input{
+            position: relative;
+            border: 1px solid $Gray;
+            border-radius: 2rem;
+            -webkit-border-radius: 2rem;
+            -moz-border-radius: 2rem;
+            -ms-border-radius: 2rem;
+            -o-border-radius: 2rem;
+            padding: .7rem 5rem;
+            padding-left: 1rem;
+            margin-right: 1rem;
+            margin-bottom: .1rem;
+            opacity: 50%;
+        }   
+        button{
+            margin-top: -10px;
+            background: $Blue;
+            color: $Pale-Blue;
+            padding: .7rem 2rem;
+            border-radius: 2rem;
+            -webkit-border-radius: 2rem;
+            -moz-border-radius: 2rem;
+            -ms-border-radius: 2rem;
+            -o-border-radius: 2rem;
+            font-weight: bold;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            &:hover{
+                opacity: 50%;
+                cursor: pointer;
+            }
+            }
+        }
+    .image{
+        margin: 3rem 0;
+        width: 420px;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+footer{
+    ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 1rem;
+        i{
+            border: 1px solid hsla(0, 0%, 59%, 0.383);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            padding: .7rem;
+            margin: .5rem;
+            color: $Blue;
+            &:hover{
+                color: invert($color: #000000);
+                background: $Blue;
+                cursor: pointer;
+            }
+        }
+    }
+    p{
+        color: $Gray;
+    }
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+        padding: 1rem 0;
+        a { 
+            color: hsl(228, 45%, 44%); 
+        }
+    
+    }
+}
+
+//media queries
+
+@media (max-width: 768px){
+main{
+    margin: 0 2rem;
+    h1{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: .7rem;
+    }
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        input{
+            margin-right: 0;
+        }
+        span{
+            justify-content: center;
+            padding-left: 0;
+        }
+        button{
+            padding: .8rem 5.5rem;
+            margin-top: 1rem;
+        }
+    }
+    .image{
+        width: 320px;
+    }
+}
+footer{
+    ul{
+        margin: .2rem;
+        i{
+            padding: .3rem;
+            margin: .2rem;
+            &.fa-1x{
+                font-size: .5em;
+            }
+        }
+        
+    }
+    p{
+        font-size: .5rem;
+    }
+    }
+}
+    
